@@ -7,6 +7,7 @@ pwd: show the present directory.
 cat filename: check the file.
 touch filename: create a new file.
 rm filename: delete the file.
+ssh-keygen -t rsa -C "youremail@example.com": create SSH KEY.
 
 git init: initialize empty Git repository in the present directory.
 git add filename: submit the file to Index.
