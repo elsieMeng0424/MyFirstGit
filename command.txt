@@ -15,6 +15,7 @@ git status: check if another file hasn't been submitted.
 git diff filename: check the difference between the present file with last one.
 git log: check the history of committing.
 git log -pretty=oneline: just like "git log" but only one line.
+git log --graph --pretty=oneline --abbrev-commit: log but can check branches deleted.
 git reset --hard HEAD^: return to the last version.
 git reset --hard HEAD^^: return to the the version before last.
 ...
@@ -27,14 +28,27 @@ git restore filename: revoke the change of the file:
 		      2.after add:
 		        return to the first version after add.
 git checkout -- filename: restore the file after deleted in the workspace.
-git push origin main: submit the newest main to Github.
-git push -u origin main: submit the main to Github (first time).
+git push origin branchname: submit the newest main to Github.
+git push -u origin branchname: submit the main to Github (first time).
+git branch --set-upstream branchname origin/branchname: set the link of the branch.
+git pull: get the newest branch.
+git remote: check your remote repo.
+git remote -v: check your remote repo (with details).
 git remote add origin yoururl: connect a local repo to github.
 git clone yoururl: clone a github repo to your local repo.
 git checkout -b branchname: create and switch to the new branch.
                             just like the two orders as follow:
                             1.git branch branchname (create) 
                             2.git checkout branchname (switch)
+git checkout -b branchname origin/branchname: switch to the branch from the origin.
 git branch: check all the branches and highlight the present branch.
 git branch -d branchname: delete the branch.
 git merge branchname: merge branch with the present one.
+git merge --no-ff -m "annotation" branchname: merge but ban fast forward(won't lose                 
+                                              barnch information).
+git stash: hide the workspace of the present branch.
+git stash list: check the workspace hidden.
+git stash pop: restore the content in stash and delete it (2 orders).
+               1.git stash apply (restore) 
+               2.git stash drop (delete)
+
