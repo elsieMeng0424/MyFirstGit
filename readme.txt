@@ -14,7 +14,7 @@ git add filename: submit the file to Index.
 git commit -m "annotation": submit the file to Repository.
 git status: check if another file hasn't been submitted.
 git diff filename: check the difference between the present file with last one.
-git log: check the history of submitting.
+git log: check the history of committing.
 git log -pretty=oneline: just like "git log" but only one line.
 git reset --hard HEAD^: return to the last version.
 git reset --hard HEAD^^: return to the the version before last.
@@ -32,9 +32,13 @@ git push origin main: submit the newest main to Github.
 git push -u origin main: submit the main to Github (first time).
 git remote add origin yoururl: connect a local repo to github.
 git clone yoururl: clone a github repo to your local repo.
-git checkout -b branchname: create and turn to the new branch.
+git checkout -b branchname: create and switch to the new branch.
                             just like the two orders as follow:
-                            1.git branch branchname (create) 2.git checkout branchname (turn)
+                            1.git branch branchname (create) 
+                            2.git checkout branchname (switch)
 git branch: check all the branches and highlight the present branch.
+git branch -d branchname: delete the branch.
+git merge branchname: merge branch with the present one.
+
 
 
