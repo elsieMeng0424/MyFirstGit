@@ -26,7 +26,6 @@ git restore filename: revoke the change of the file:
 		        return to the version as Repository.
 		      2.after add:
 		        return to the first version after add.
-git commit -a: delete the file in Repository.
 git checkout -- filename: restore the file after deleted in the workspace.
 
 
