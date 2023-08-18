@@ -32,3 +32,9 @@ git push origin main: submit the newest main to Github.
 git push -u origin main: submit the main to Github (first time).
 git remote add origin yoururl: connect a local repo to github.
 git clone yoururl: clone a github repo to your local repo.
+git checkout -b branchname: create and turn to the new branch.
+                            just like the two orders as follow:
+                            1.git branch branchname (create) 2.git checkout branchname (turn)
+git branch: check all the branches and highlight the present branch.
+
+
