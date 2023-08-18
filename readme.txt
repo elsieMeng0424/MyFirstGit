@@ -30,5 +30,5 @@ git restore filename: revoke the change of the file:
 git checkout -- filename: restore the file after deleted in the workspace.
 git push origin main: submit the newest main to Github.
 git push -u origin main: submit the main to Github (first time).
-
-
+git remote add origin yoururl: connect a local repo to github.
+git clone yoururl: clone a github repo to your local repo.
