@@ -28,5 +28,6 @@ git restore filename: revoke the change of the file:
 		        return to the first version after add.
 git checkout -- filename: restore the file after deleted in the workspace.
 git push origin main: submit the newest main to Github.
+git push -u origin main: submit the main to Github (first time).
 
 
